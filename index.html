@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- CALCULATOR -->
+  <div class="card">
+    <div class="calc-screen">
+      <div class="calc-expr" id="calcExpr"></div>
+      <div class="calc-val" id="calcVal">0</div>
+    </div>
+
+    <div class="btn-grid">
+      <button class="btn clr" onclick="cc()">AC</button>
+      <button class="btn fn" onclick="ctoggleSign()">+/−</button>
+      <button class="btn fn" onclick="cpct()">%</button>
+      <button class="btn op" onclick="ca('/')">÷</button>
+
+      <button class="btn" onclick="ca('7')">7</button>
+      <button class="btn" onclick="ca('8')">8</button>
+      <button class="btn" onclick="ca('9')">9</button>
+      <button class="btn op" onclick="ca('*')">×</button>
+
+      <button class="btn" onclick="ca('4')">4</button>
+      <button class="btn" onclick="ca('5')">5</button>
+      <button class="btn" onclick="ca('6')">6</button>
+      <button class="btn op" onclick="ca('-')">−</button>
+
+      <button class="btn" onclick="ca('1')">1</button>
+      <button class="btn" onclick="ca('2')">2</button>
+      <button class="btn" onclick="ca('3')">3</button>
+      <button class="btn op" onclick="ca('+')">+</button>
+
+      <button class="btn fn" onclick="csq()">√</button>
+      <button class="btn" onclick="ca('0')">0</button>
+      <button class="btn" onclick="ca('.')">.</button>
+      <button class="btn eq" onclick="ce()">=</button>
+    </div>
+  </div>
+
+  <!-- STOPWATCH -->
+  <div class="card">
+
+    <div class="timer-screen" id="timerDisplay">00:00:00:00</div>
+
+    <div class="timer-units">
+      <span>hr</span><span>min</span><span>sec</span><span>ms</span>
+    </div>
+
+    <div class="t-btns">
+      <button class="t-btn start" onclick="ts()">Start</button>
+      <button class="t-btn pause" onclick="tp()">Pause</button>
+      <button class="t-btn reset" onclick="tr()">Reset</button>
+      <button class="t-btn lap" onclick="tl()">+ lap</button>
+    </div>
+
+    <div class="lap-list" id="lapList"></div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
