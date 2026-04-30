@@ -1,0 +1,120 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Syne', sans-serif;
+  background: #0d0d0f;
+  color: #e8e6e1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #141416;
+  border: 1px solid #2a2a2e;
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 290px;
+}
+
+/* calculator */
+.calc-screen {
+  font-family: 'JetBrains Mono', monospace;
+  background: #0d0d0f;
+  border: 1px solid #2a2a2e;
+  border-radius: 12px;
+  padding: 14px 16px;
+  text-align: right;
+  margin-bottom: 14px;
+}
+
+.calc-expr {
+  font-size: 12px;
+  color: #444;
+  min-height: 18px;
+}
+
+.calc-val {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 7px;
+}
+
+.btn {
+  font-family: 'JetBrains Mono', monospace;
+  padding: 14px 0;
+  border-radius: 10px;
+  border: 1px solid #2a2a2e;
+  background: #1c1c1f;
+  color: #c8c5bf;
+  cursor: pointer;
+}
+
+.btn.op { color: #6da3e8; }
+.btn.eq { background: #6da3e8; color: #000; }
+.btn.clr { color: #e87070; }
+.btn.fn { color: #7ecbae; }
+
+/* stopwatch */
+.timer-screen {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 36px;
+  text-align: center;
+}
+
+.timer-units {
+  display: flex;
+  justify-content: space-around;
+  font-size: 8px;
+  color: #383838;
+  margin-bottom: 1rem;
+}
+
+.t-btns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+}
+
+.t-btn {
+  font-family: 'Syne', sans-serif;
+  padding: 12px 0;
+  border-radius: 10px;
+  border: 1px solid #2a2a2e;
+  background: #1c1c1f;
+  color: #c8c5bf;
+  cursor: pointer;
+}
+
+.t-btn.start { color: #7ecbae; }
+.t-btn.pause { color: #d4a83a; }
+.t-btn.reset { color: #e87070; }
+.t-btn.lap {
+  grid-column: span 3;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #555;
+}
+
+.lap-list {
+  max-height: 150px;
+  overflow-y: auto;
+}
