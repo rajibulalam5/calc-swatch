@@ -94,8 +94,8 @@ No frameworks. No dependencies.
 
 ## 🌐 Live Demo
 
-🔗 Add hosted link here:
-**[Click to View Live Project](#)**
+🔗 hosted link here:
+**(https://rajibulalam5.github.io/calc-swatch/)**
 
 ---
 
